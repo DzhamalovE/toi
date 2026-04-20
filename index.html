@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="kk">
-
 <head>
     <meta charset="UTF-8">
     <title>Тойға шақыру</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="card">
-        <h1>Құрметті қонақ!</h1>
+<div class="card">
+    <h1>Құрметті қонақ!</h1>
 
-        <p class="invite-text">
-            Сізді біздің қуанышымызбен бөлісуге арналған<br> тойымызға шақырамыз!
-        </p>
+    <p>Сізді тойымызға шақырамыз 💍</p>
 
-        <h2>👰 Айдос & 🤵 Аружан</h2>
+    <h2>Айдос & Аружан</h2>
 
-        <p><strong>Күні:</strong> 25 Тамыз 2026</p>
-        <p><strong>Уақыты:</strong> 18:00</p>
-        <p><strong>Мекенжай:</strong> Астана қаласы, "Royal Hall"</p>
+    <input type="text" id="name" placeholder="Атыңыз">
+    <input type="text" id="phone" placeholder="Телефон">
 
-        <button onclick="showMessage()">Қатысатыныңызды растау</button>
+    <select id="status">
+        <option value="Иә">Келемін</option>
+        <option value="Жоқ">Келе алмаймын</option>
+    </select>
 
-        <p id="response"></p>
-    </div>
+    <button onclick="sendData()">Жіберу</button>
+    <h3>📍 Мекенжай:</h3>
 
-    <script src="script.js"></script>
+<iframe 
+    src="https://www.google.com/maps/embed?pb=https://maps.app.goo.gl/ozRcy1o54D8rSyFT7"
+    width="100%" 
+    height="250" 
+    style="border:0; border-radius:15px;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
